@@ -1,3 +1,46 @@
-body {
-  background-color: #fff00f;
+:root {
+  --primary-color: #6b63ff;
+  --secondary-color: #f9f7fe;
+  --primary-font: "Poppins", sans-serif;
+  --accent-font: "Playfair Display", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--accent-font);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 96px;
+}
+.hero p {
+  font-family: var(--primary-font);
+  font-size: 36px;
+  font-weight: bold;
+  color: #272142;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  padding: 140px 0;
+  text-align: center;
+}
+
+.hero-h2 {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  line-height: 2;
+}
+.contact-buttons {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
 }
