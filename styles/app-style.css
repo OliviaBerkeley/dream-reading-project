@@ -1,8 +1,10 @@
 :root {
-  --primary-color: #6b63ff;
-  --secondary-color: #f9f7fe;
-  --primary-font: "Poppins", sans-serif;
-  --accent-font: "Playfair Display", serif;
+  --primary-color: #433c5e;
+  --secondary-color: #b0a7c7;
+  --accent-color: #ffece3;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-font: "Montserrat", sans-serif;
+  --accent-font: "Josefin Slab", serif;
 }
 h1,
 h2,
@@ -15,8 +17,9 @@ h6 {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 96px;
+  color: #fff;
 }
 
 h2 {
@@ -37,6 +40,11 @@ p {
 
 .hero {
   background-color: var(--secondary-color);
+  background-image: url(/images/HeaderImage.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 140px 0;
   text-align: center;
 }
@@ -45,15 +53,30 @@ p {
   font-family: var(--primary-font);
   font-size: 24px;
   line-height: 2;
+  color: #fff;
+}
+
+/*.hero-wrapper {
+  background-color: rgba(67, 60, 94, 0.6);
+  padding: 40px;
+}*/
+.nav-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+.nav-links a {
+  margin: 20px;
 }
 .button-solid {
-  background-color: var(--primary-color);
+  background-color: rgba(176, 167, 199, 0.4);
   color: #fff;
   text-align: center;
   padding: 15px 30px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
+  box-shadow: var(--box-shadow);
 }
 .button-outline {
   color: var(--primary-color);
@@ -64,7 +87,7 @@ p {
   font-family: var(--primary-font);
 }
 .description {
-  padding: 120px 60px;
+  padding: 60px;
 }
 
 @media (max-width: 900px) {
@@ -73,10 +96,10 @@ p {
     text-align: center;
   }
   h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 44px;
+    font-size: 35px;
   }
   p {
     font-size: 16px;
