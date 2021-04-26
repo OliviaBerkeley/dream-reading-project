@@ -11,11 +11,22 @@ h4,
 h5,
 h6 {
   font-family: var(--accent-font);
+  font-weight: bold;
 }
 
 h1 {
   font-weight: bold;
   font-size: 96px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 30px;
 }
 .hero p {
   font-family: var(--primary-font);
@@ -35,7 +46,7 @@ h1 {
   font-size: 24px;
   line-height: 2;
 }
-.contact-buttons {
+.button-solid {
   background-color: var(--primary-color);
   color: #fff;
   text-align: center;
@@ -43,4 +54,31 @@ h1 {
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
+}
+.button-outline {
+  color: var(--primary-color);
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: var(--primary-font);
+}
+.description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  .description {
+    padding: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
