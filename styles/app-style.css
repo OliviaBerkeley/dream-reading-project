@@ -2,7 +2,7 @@
   --primary-color: #433c5e;
   --secondary-color: #b0a7c7;
   --accent-color: #ffece3;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --box-shadow: 2px 5px 15px 0 rgba(0, 0, 0, 0.2);
   --primary-font: "Montserrat", sans-serif;
   --accent-font: "Josefin Slab", serif;
 }
@@ -17,7 +17,6 @@ h6 {
 }
 
 h1 {
-  font-weight: normal;
   font-size: 96px;
   color: #fff;
 }
@@ -55,7 +54,20 @@ p {
   line-height: 2;
   color: #fff;
 }
-
+.about-section {
+  padding: 140px 5px;
+}
+.about-section h1 {
+  color: rgb(0, 0, 0);
+}
+.about-section h2 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+.about-wrapper {
+  padding: 0 45px;
+}
 /*.hero-wrapper {
   background-color: rgba(67, 60, 94, 0.6);
   padding: 40px;
@@ -81,25 +93,36 @@ p {
 .button-outline {
   color: var(--primary-color);
   border-radius: 4px;
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   padding: 15px 30px;
   font-size: 18px;
   font-family: var(--primary-font);
+  box-shadow: var(--box-shadow);
+}
+.button-outline:hover {
+  color: #fff;
+  background-color: var(--primary-color);
 }
 .description {
   padding: 60px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1199px) {
   .description {
     padding: 0;
     text-align: center;
+  }
+  .about-bio {
+    padding: 10px 45px;
+  }
+  .about-img {
+    margin: 10px 25px;
   }
   h1 {
     font-size: 40px;
   }
   h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   p {
     font-size: 16px;
