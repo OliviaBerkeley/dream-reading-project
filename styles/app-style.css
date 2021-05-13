@@ -4,7 +4,8 @@
   --accent-color: #ffece3;
   --box-shadow: 2px 5px 15px 0 rgba(0, 0, 0, 0.2);
   --primary-font: "Montserrat", sans-serif;
-  --accent-font: "Josefin Slab", serif;
+  --accent-font: "Josefin Sans", sans-serif;
+  --text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 h1,
 h2,
@@ -13,22 +14,32 @@ h4,
 h5,
 h6 {
   font-family: var(--accent-font);
-  font-weight: bold;
+
+  color: rgb(252, 241, 241);
 }
 
 h1 {
   font-size: 96px;
-  color: #fff;
+  color: rgb(252, 241, 241);
 }
 
 h2 {
   font-size: 64px;
 }
-
+.h2-special {
+  font-size: 25px;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  color: #fff;
+  padding: 15px 65px;
+}
 p {
   font-family: var(--primary-font);
   font-size: 16px;
   line-height: 30px;
+}
+.text-shadow {
+  text-shadow: var(--text-shadow);
 }
 .hero p {
   font-family: var(--primary-font);
@@ -39,7 +50,7 @@ p {
 
 .hero {
   background-color: var(--secondary-color);
-  background-image: url(/images/HeaderImage.jpg);
+  background-image: url(/images/HomePageForest.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,31 +58,54 @@ p {
   padding: 140px 0;
   text-align: center;
 }
-
-.hero-h2 {
+.services {
+  background-color: var(--secondary-color);
+  background-image: url(/images/zahaan-khan-BYNK7wHZLJA-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 10px 0;
+}
+.services-content h2 {
+  color: var(--primary-color);
+}
+.services-content h3 {
+  color: var(--primary-color);
+}
+/*.service-blurb {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  margin: 5px;
+}*/
+.bio-title {
   font-family: var(--primary-font);
   font-size: 24px;
   line-height: 2;
+  font-weight: normal;
   color: #fff;
 }
-.about-section {
-  padding: 140px 5px;
+.content-container {
+  padding: 140px 45px;
 }
-.about-section h1 {
+.content-solid {
+  background-color: var(--primary-color);
+  padding: 45px 65px;
+  opacity: 85%;
+}
+/*.services-content {
+  text-shadow: var(--text-shadow);
+}*/
+.about-bio h1 {
   color: rgb(0, 0, 0);
 }
-.about-section h2 {
-  font-size: 20px;
+.about-bio h3 {
   font-family: var(--primary-font);
   font-weight: bold;
+  color: rgb(0, 0, 0);
 }
-.about-wrapper {
-  padding: 0 45px;
-}
-/*.hero-wrapper {
-  background-color: rgba(67, 60, 94, 0.6);
-  padding: 40px;
-}*/
+
 .nav-links {
   display: flex;
   margin-top: 40px;
@@ -97,7 +131,7 @@ p {
   padding: 15px 30px;
   font-size: 18px;
   font-family: var(--primary-font);
-  box-shadow: var(--box-shadow);
+  /*box-shadow: var(--box-shadow);*/
 }
 .button-outline:hover {
   color: #fff;
