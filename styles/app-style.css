@@ -1,3 +1,4 @@
+/*Variables and Utilities*/
 :root {
   --primary-color: #433c5e;
   --secondary-color: #b0a7c7;
@@ -7,6 +8,16 @@
   --accent-font: "Josefin Sans", sans-serif;
   --text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
+.text-shadow {
+  text-shadow: var(--text-shadow);
+}
+.h1-special {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 75px;
+}
+
+/*General Element Styling*/
 h1,
 h2,
 h3,
@@ -21,7 +32,6 @@ h1 {
   color: rgb(252, 241, 241);
   font-weight: 200;
 }
-
 h2 {
   font-size: 64px;
   font-weight: 200;
@@ -38,7 +48,6 @@ form {
   font-family: var(--primary-font);
   color: var(--primary-color);
 }
-
 a {
   color: var(--secondary-color);
 }
@@ -46,6 +55,7 @@ a:hover {
   color: var(--primary-color);
 }
 
+/*Navigation Menu*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -60,54 +70,77 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-
 nav li {
   display: inline;
   list-style: none;
   line-height: 42px;
   margin-left: 30px;
 }
-
 nav a {
   text-decoration: none;
   color: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
-
 nav a:hover,
 nav .active {
   color: var(--secondary-color);
   font-weight: bold;
 }
 
-.illustration {
-  max-width: 400px;
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
 }
-.testimonial-img {
-  display: inline-block;
-  width: 100%;
-  height: auto;
+footer ul {
+  padding: 0;
+  margin: 0;
 }
-.icon {
+footer li {
+  display: inline;
+  line-height: 42px;
+  margin: 10px;
+}
+footer .footer-img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+  border-radius: 50%;
+}
+footer .social-link {
+  margin: 10px 15px;
+  font-size: 25px;
+  color: var(--accent-color);
+  transition: all 100ms ease-in-out;
+}
+footer .social-link:hover {
   color: var(--secondary-color);
 }
-.navbar-brand {
-  font-family: var(--accent-font);
-  font-weight: lighter;
-  font-size: 25px;
+footer .footer-nav-links {
+  list-style: none;
 }
-.h2-special {
-  font-size: 25px;
-  font-family: var(--primary-font);
-  font-weight: normal;
-  color: #fff;
-  padding: 15px 65px;
+footer .footer-nav-links a {
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: all 100ms ease-in-out;
+}
+footer .footer-nav-links a:hover {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+footer .p-special {
+  color: var(--secondary-color);
+  line-height: 13px;
+}
+footer .h6-special {
+  color: var(--secondary-color);
+  font-weight: 300;
 }
 
-.text-shadow {
-  text-shadow: var(--text-shadow);
-}
-
+/*Homepage*/
 .hero {
   background-color: var(--secondary-color);
   background-image: url(/images/HomePageForest.jpg);
@@ -117,6 +150,26 @@ nav .active {
   background-size: cover;
   padding: 100px 0;
   text-align: center;
+}
+.hero p {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  color: var(--accent-color);
+}
+.bio-title {
+  font-family: var(--primary-font);
+  font-size: 30px;
+  line-height: 2;
+  font-weight: 300;
+  color: #fff;
+}
+.nav-links {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.nav-links a {
+  margin: 20px;
 }
 .scroll {
   font-size: 45px;
@@ -140,29 +193,63 @@ nav .active {
     transform: translateY(0);
   }
 }
-.scroll:hover {
-  color: rgba(176, 167, 199, 0.8);
-}
 .fa-chevron-down {
-  color: rgba(255, 236, 227, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+.testimonial-img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.hero p {
-  font-family: var(--primary-font);
-  font-size: 20px;
-  color: var(--accent-color);
+/*General Styling Across Pages*/
+.illustration {
+  max-width: 400px;
 }
-.bio-title {
-  font-family: var(--primary-font);
-  font-size: 30px;
-  line-height: 2;
-  font-weight: 300;
-  color: #fff;
+.icon {
+  color: var(--secondary-color);
+}
+.disclaimer {
+  font-size: 10px;
 }
 .wrapper {
   background-color: rgba(67, 60, 94, 0.6);
   padding: 45px 0;
 }
+.button-solid {
+  background-color: rgba(176, 167, 199, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 27px;
+  box-shadow: var(--box-shadow);
+  transition: all 100ms ease-in-out;
+}
+.button-solid:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.button-outline {
+  color: var(--accent-color);
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: var(--primary-font);
+  transition: all 100ms ease-in-out;
+}
+.button-outline:hover {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+.description {
+  padding: 40px;
+}
+
+/*Services Page*/
 .services {
   background-color: var(--secondary-color);
   background-image: url(/images/HomePageForest.jpg);
@@ -173,9 +260,21 @@ nav .active {
   padding: 140px 0;
   text-align: center;
 }
-
+.h2-special {
+  font-size: 25px;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  color: #fff;
+  padding: 15px 65px;
+}
 .services-content {
   padding: 10px 20px;
+}
+.services-content h2 {
+  color: var(--primary-color);
+}
+.content-container {
+  padding: 75px 45px;
 }
 .button-bar {
   display: flex;
@@ -188,14 +287,15 @@ nav .active {
   text-align: center;
   padding: 40px 0;
 }
-.services-content h2 {
-  color: var(--primary-color);
+.accordion-button:not(.collapsed) {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.accordion-heading::after {
+  background-color: var(--secondary-color);
 }
 
-.content-container {
-  padding: 75px 45px;
-}
-
+/*About Me*/
 .about-bio h1 {
   color: var(--primary-color);
 }
@@ -213,51 +313,10 @@ nav .active {
   padding: 25px 45px;
   border-radius: 10px;
 }
-.nav-links {
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
-}
-.nav-links a {
-  margin: 20px;
-}
-
-.button-solid {
-  background-color: rgba(176, 167, 199, 0.8);
-  color: #fff;
-  text-align: center;
-  padding: 15px 30px;
-  border-radius: 6px;
-  font-size: 18px;
-  line-height: 27px;
-  box-shadow: var(--box-shadow);
-  transition: all 100ms ease-in-out;
-}
-.button-solid:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.button-outline {
-  color: var(--accent-color);
-  border-radius: 6px;
-  border: 1px solid var(--secondary-color);
-  padding: 15px 30px;
-  font-size: 18px;
-  font-family: var(--primary-font);
-  transition: all 100ms ease-in-out;
-}
-.button-outline:hover {
-  color: #fff;
-  background-color: var(--secondary-color);
-}
-
-.description {
-  padding: 40px;
-}
 
 @media (max-width: 900px) {
-  h1 {
+  h1,
+  .h1-special {
     font-size: 40px;
   }
   h2 {
@@ -273,6 +332,9 @@ nav .active {
   nav li {
     margin: 10px;
     font-size: 12px;
+  }
+  footer a {
+    font-size: 10px;
   }
   .description {
     padding: 0;
@@ -306,7 +368,6 @@ nav .active {
   .illustration {
     width: 95%;
   }
-
   .bio-title {
     font-size: 18px;
   }
