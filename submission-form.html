@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get a personalized dream interpretation from Olivia."
+    <meta name="description" content="Get a personalized dream interpretation from Olivia."/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,9 +37,9 @@
                     <a href="/services.html#pricing" title="Pricing">Prices</a>
                 </li>
                 <li>
-                    <a href="/about.html" title="About Olivia">About Me</a>
+                    <a href="/about.html" title="About Olivia">About</a>
                 </li>
-                <li>
+                <li class="d-none d-md-inline">
                     <a href="/about.html#contact" title="Contact Olivia">Contact</a>
                 </li>
             </ul>
@@ -47,43 +47,43 @@
     </div>
 
 <!--Submission form from Formspree-->
-    <div class="container content-container">
-        <h1 class="h1-special text-center">Submit Your Dream for a Reading</h1>
+    <div class="container">
+        <h1 class="h1-special mt-5">Submit Your Dream for a Reading</h1>
         <div class="row d-flex align-items-center">
             <div class="col-lg-7">
-                <p class="mt-5 ms-5">Welcome to my form—let's get acquainted!<br /><br />To get started, fill out your information below. When describing your dream, please provide as much detail as you can remember and be sure to include any memories of how you felt during the dream in the spaces provided. However, if there are parts that you can't remember, don't worry!<br /><br /> Just write down what you do remember, and if there's a blank spot, just jot down that something happened there but you don't know what it is, and then continue on to the next part that you remember. This helps me connect with both you and the dream to help provide the most detailed reading!</p>
+                <p class="mt-2">Welcome to my form—let's get acquainted!<br /><br />To get started, fill out your information below. When describing your dream, please provide as much detail as you can remember and be sure to include any memories of how you felt during the dream in the spaces provided. However, if there are parts that you can't remember, don't worry!<br /><br /> Just write down what you do remember, and if there's a blank spot, just jot down that something happened there but you don't know what it is, and then continue on to the next part that you remember. This helps me connect with both you and the dream to help provide the most detailed reading!</p>
             </div>
             <div class="col-lg-5">
-                <img src="/images/undraw_diary_99km.svg" alt="Illustration of a woman and diary pages" class="img-fluid illustration mt-5 me-5" />
+                <img src="/images/undraw_diary_99km.svg" alt="Illustration of a woman and diary pages" class="img-fluid illustration mt-5" />
             </div>
         </div>
-        <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvjynjw" method="post">
+        <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvjynjw" method="post" class=p-2>
             <fieldset id="fs-frm-inputs">
-                <div class="row m-5">
+                <div class="row mb-4">
                     <label for="full-name" class="p-0 mb-1">Full Name</label>
                     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
                 </div>
-                <div class="row m-5">
+                <div class="row mb-4">
                     <label for="email-address" class="p-0 mb-1">Email Address</label>
                     <input type="email" name="_replyto" id="email-address" placeholder="Please enter your email address" required="">
                 </div>
-                <div class="row m-5">
+                <div class="row mb-4">
                     <label for="message" class="p-0 mb-1">Your Dream</label>
                     <textarea rows="10" name="message" id="message" placeholder="I'm excited for you to share your dream with me! Please type it out here." required=""></textarea>
                 </div>
-                <div class="row m-5">
+                <div class="row mb-4">
                     <label for="message" class="p-0 mb-1">If there were any people in your dream, how did you feel towards them?</label>
                     <textarea rows="5" name="message" id="message" placeholder="(E.g., angry, afraid, sad, creeped out, happy to see them, etc.)" required=""></textarea>
                 </div>
-                <div class="row m-5">
+                <div class="row mb-4">
                     <label for="message" class="p-0 mb-1">If there were any animals in your dream, how did you feel towards them?</label>
                     <textarea rows="5" name="message" id="message" placeholder="(E.g., did they scare you or did you like the animal in the dream, etc.)" required=""></textarea>
                 </div>
-                <div class="row m-5">
+                <div class="row mb-4">
                     <label for="message" class="p-0 mb-1">Is there any other relevant information you'd like me to know?</label>
                     <textarea rows="5" name="message" id="message" placeholder="(If no, just put N/A)" required=""></textarea>
                 </div>
-                <div class="row m-5">
+                <div class="row mb-4">
                     <label for="department" class="p-0 mb-1">Overall, did the dream feel...</label>
                     <select name="department" id="department" required="">
                         <option value="Select" selected="" disabled="">Please select...</option>
@@ -94,15 +94,19 @@
                 </div>
                 <input type="hidden" name="_subject" id="email-subject" value="Dream Submission">
             </fieldset>
-            <input type="submit" value="Submit Dream" class="mt-2 mb-5 ms-5 btn button-solid">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-12">
+                    <input type="submit" value="Submit Dream" class="mt-2 mb-5 btn button-solid">
+                </div>
+            </div>
         </form>
 
     <div class="row d-flex justify-content-center mb-5">
-        <img src="/images/undraw_personal_file_222m (1).svg" alt="Illustration of woman with personal file" class="img-fluid illustration">
+        <img src="/images/undraw_Personal_opinions_re_qw29.svg" alt="Illustration of woman with rectangle chat boxes" class="img-fluid illustration">
     </div>
     
 <!--Fun Legal Language-->
-    <p class="disclaimer">Disclaimer: By clicking Submit on this form, you agree to the Terms and Conditions of participating in a dream reading with Olivia R. Berkeley. Dream readings are for entertainment purposes only and should not be a replacement for professional support. By clicking submit, you agree to these Terms & Conditions laid out here and at the bottom of the page.</p>
+    <p class="disclaimer text-center">Disclaimer: By clicking Submit on this form, you agree to the Terms and Conditions of participating in a dream reading with Olivia R. Berkeley. Dream readings are for entertainment purposes only and should not be a replacement for professional support. By clicking submit, you agree to these Terms & Conditions laid out here and at the bottom of the page.</p>
     </div>
 
 <!--Footer-->
@@ -135,14 +139,14 @@
                         <li>
                             <a href="/about.html" title="About Olivia">About</a>
                         </li>
-                        <li>
+                        <li class="d-none d-md-inline">
                             <a href="/services.html#pricing" title="Pricing">Prices</a>
                         </li>
                     </ul>
                 </div>
             </div>
     
-            <h6 class="text-center h6-special mt-3 mb-3">Website designed and coded by Olivia R. Berkeley, code is <a href="https://github.com/OliviaBerkeley/dream-reading-project" target="_blank" title="GitHub Repository">open-source</a>.<br />Copyright © 2021 Olivia R. Berkeley. All rights reserved.</h6>
+            <h6 class="text-center h6-special mt-3 mb-3">Website designed and coded by Olivia R. Berkeley, code is <a href="https://github.com/OliviaBerkeley/dream-reading-project" target="_blank" title="GitHub Repository">open-source</a>. Content copyright © 2021 Olivia R. Berkeley. All rights reserved.</h6>
             <p class="disclaimer p-special text-center mt-3">Disclaimer: By consulting me, viewing my website, and/or booking a reading with me, you acknowledge that I am not a licensed psychologist, lawyer, or health care professional and my services do not replace the care of licensed psychologists, lawyers, or other health care professionals. You also agree to the Terms and Conditions of participating in a dream reading with Olivia R. Berkeley. Dream readings are for entertainment purposes only and should not be considered a replacement for professional support. Olivia R. Berkeley is not responsible for any mental distress that may occur as a result of participating with a dream reading, but will always treat your reading with the utmost care. All dreams are treated with respect and will be treated with confidentiality to the best of Olivia R. Berkeley's ability. Submitting your dream does not guarantee a dream reading. Upon submitting your form, Olivia will review and connect with you directly for payment and next steps to proceed with your reading. Olivia R. Berkeley will at all times exercise her best professional judgment and skills, but cannot guarantee the outcomes of a reading or suggestions on her website. She can only guarantee to deliver the services purchased as described. By booking a reading or using this website, you agree to these Terms & Conditions.
             </p>
         </div>

@@ -207,14 +207,25 @@ footer .h6-special {
 }
 
 /*General Styling Across Pages*/
+.submit-row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .illustration {
   max-width: 400px;
+}
+.illustration-special {
+  max-width: 600px;
 }
 .icon {
   color: var(--secondary-color);
 }
 .disclaimer {
   font-size: 10px;
+}
+.content-container {
+  padding: 75px 45px;
 }
 .wrapper {
   background-color: rgba(67, 60, 94, 0.6);
@@ -276,9 +287,6 @@ footer .h6-special {
 .services-content h2 {
   color: var(--primary-color);
 }
-.content-container {
-  padding: 75px 45px;
-}
 .button-bar {
   display: flex;
   justify-content: center;
@@ -337,22 +345,27 @@ footer .h6-special {
     font-size: 12px;
   }
   footer a {
+    font-size: 12px;
+  }
+  footer a .disclaimer {
     font-size: 10px;
+  }
+  footer h6 {
+    font-size: 13px;
   }
   .description {
     padding: 0;
     text-align: start;
   }
   .about-bio {
-    padding: 10px 45px;
-  }
-  .about-img {
-    margin: 10px 25px;
+    padding: 10px;
+    text-align: center;
   }
   .h2-special {
     font-size: 16px;
     text-shadow: none;
     font-weight: 700;
+    padding: 0;
   }
   .hero-content {
     text-align: center;

@@ -25,11 +25,12 @@
 <div class="container">
     <nav class="align-items-center">
         <a href="/" title="Back to the Homepage">
-            <img src="images/ORB Logo.png" class="logo d-none d-md-block" alt="Olivia's logo. A lavendar circle with her name on it." />
+            <img src="images/ORB Logo.png" class="logo d-none d-md-block"
+                alt="Olivia's logo. A lavendar circle with her name." />
         </a>
         <ul>
             <li>
-                <a href="/" title="Homepage">Home</a>
+                <a href="/" title="Homepage" class="active">Home</a>
             </li>
             <li>
                 <a href="/services.html" title="Services">Services</a>
@@ -38,9 +39,9 @@
                 <a href="/services.html#pricing" title="Pricing">Prices</a>
             </li>
             <li>
-                <a href="/about.html" title="About Olivia" class="active">About Me</a>
+                <a href="/about.html" title="About Olivia">About</a>
             </li>
-            <li>
+            <li class="d-none d-md-inline">
                 <a href="/about.html#contact" title="Contact Olivia">Contact</a>
             </li>
         </ul>
@@ -48,22 +49,27 @@
 </div>
 
 <!--Bio section...probably need to suck it up and write some kind of bio...people still need *some* kind of information-->
-<div class="content-container container">
-    <div class="row d-flex align-items-center">
-        <div class="col-lg-6 content about-bio">
+<div class="container">
+    <div class="row d-flex align-items-center mt-5 mb-3">
+        <div class="col-lg-6 content about-bio p-3">
             <h1 class="mb-4">Meet Olivia</h1>
             <h3 class="mb-4 lh-base text-muted">👋 Hey! I'm Olivia and my goal is to introduce you to...yourself!</h3>
             <p>But before we get to that, maybe a little about myself would be good. </p>
-            <p class="">Fun Fact: I absolutely hate trying to write a bio about myself! So I'm not going to. Instead, please enjoy some random facts about me (presented below). 😁</p>
+            <p class="">Fun Fact: I absolutely hate trying to write a bio about myself! So I'm not going to. Instead,
+                please enjoy some random facts about me (presented below). 😁</p>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center">
-            <img src="images/Olivia4.png" alt="A portrait of Olivia" class="img-fluid about-img about-photo"/>
-        </div>  
+        <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
+            <img src="images/Olivia4.png" alt="A portrait of Olivia" class="img-fluid about-photo" />
+        </div>
     </div>
+    <div class="col-lg-6 d-flex d-lg-none justify-content-center mt-3 about-photo-wrapper">
+            <img src="images/Olivia4.png" alt="A portrait of Olivia" class="img-fluid about-img about-photo-sm" />
+        </div>
 </div>
+        
 
 <!--Fun Facts section...btw, the chicken merely has to lure the elephant to an unstable cliff edge where the chicken can walk, but the elephant will fall through.-->
-<div class="container text-center about-facts">
+<div class="container text-center about-facts mt-5">
     <h2 class="text-center mt-5 mb-5">Without further ado...</h2>
     <h5>If you were arrested with no explanation, what would your friends assume you'd done?</h5>
     <p class="mb-5">And I quote, “🤣 hacking into government computers.” (For legal purposes, this is a joke.)</p>
@@ -109,22 +115,27 @@
         <div class="col-lg-6">
             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xgeradla" method="post">
                 <fieldset id="fs-frm-inputs">
-                    <div class="row ms-1 mb-5">
+                    <div class="row mb-5">
                         <label for="full-name" class="p-0 mb-1">Full Name</label>
                         <input type="text" name="name" id="full-name" placeholder="Let me know your name" required="">
                     </div>
-                    <div class="row ms-1 mb-5">
+                    <div class="row mb-5">
                         <label for="email-address" class="p-0 mb-1">Email Address</label>
                         <input type="email" name="_replyto" id="email-address" placeholder="Please enter your email address" required="">
                     </div>
-                    <div class="row ms-1 mb-5">
+                    <div class="row mb-3">
                         <label for="message" class="p-0 mb-1">Message</label>
                         <textarea rows="5" name="message" id="message" class="text-muted"
                         placeholder="Write your message here! Whether you want to get in touch about booking a reading, ask if I do any freelance work or art commissions (yes), or just want to discuss whether Miss Marple or Poirot is better, this is the place to do it." required=""></textarea>
                         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                     </div>
                 </fieldset>
-                <input type="submit" value="Submit" class="btn button-solid ms-1 mt-2 mb-5">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-12">
+                        <input type="submit" value="Submit" class="btn button-solid ms-0 mt-2 mb-5">
+                    </div>
+                </div>
+                
             </form>
         </div>
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
@@ -168,13 +179,13 @@
                     <li>
                         <a href="/about.html" title="About Olivia">About</a>
                     </li>
-                    <li>
+                    <li class="d-none d-md-inline">
                         <a href="/services.html#pricing" title="Pricing">Prices</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <h6 class="text-center h6-special mt-3 mb-3">Website designed and coded by Olivia R. Berkeley, code is <a href="https://github.com/OliviaBerkeley/dream-reading-project" target="_blank" title="GitHub Repository">open-source</a>.<br />Copyright © 2021 Olivia R. Berkeley. All rights reserved.</h6>
+        <h6 class="text-center h6-special mt-3 mb-3">Website designed and coded by Olivia R. Berkeley, code is <a href="https://github.com/OliviaBerkeley/dream-reading-project" target="_blank" title="GitHub Repository">open-source</a>. Content copyright © 2021 Olivia R. Berkeley. All rights reserved.</h6>
         <p class="disclaimer p-special text-center mt-3">Disclaimer: By consulting me, viewing my website, and/or booking a reading with me, you acknowledge that I am not a licensed psychologist, lawyer, or health care professional and my services do not replace the care of licensed psychologists, lawyers, or other health care professionals. You also agree to the Terms and Conditions of participating in a dream reading with Olivia R. Berkeley. Dream readings are for entertainment purposes only and should not be considered a replacement for professional support. Olivia R. Berkeley is not responsible for any mental distress that may occur as a result of participating with a dream reading, but will always treat your reading with the utmost care. All dreams are treated with respect and will be treated with confidentiality to the best of Olivia R. Berkeley's ability. Submitting your dream does not guarantee a dream reading. Upon submitting your form, Olivia will review and connect with you directly for payment and next steps to proceed with your reading. Olivia R. Berkeley will at all times exercise her best professional judgment and skills, but cannot guarantee the outcomes of a reading or suggestions on her website. She can only guarantee to deliver the services purchased as described. By booking a reading or using this website, you agree to these Terms & Conditions.</p>
     </div>
 </footer>
