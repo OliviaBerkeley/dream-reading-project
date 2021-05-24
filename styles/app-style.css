@@ -95,6 +95,9 @@ footer {
   font-family: var(--primary-font);
   background-color: var(--primary-color);
 }
+footer a {
+  color: var(--accent-color);
+}
 footer ul {
   padding: 0;
   margin: 0;
